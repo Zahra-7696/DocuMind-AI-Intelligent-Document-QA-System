@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: documind-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: documind
+  template:
+    metadata:
+      labels:
+        app: documind
+    spec:
+      containers:
+      - name: documind
+        image: documind-ai   # your docker image
+        ports:
+        - containerPort: 7860
+        env:
+        - name: GRADIO_HOST
+          value: "0.0.0.0"
+        - name: OLLAMA_BASE_URL
+          value: "http://host.docker.internal:11434"

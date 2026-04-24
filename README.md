@@ -29,7 +29,10 @@ The system follows a structured RAG pipeline:
 - Monitoring: Prometheus + Grafana
 
 ## 📂 Project Structure
-  Github-QA-Bot-answer-PDF/
+
+
+```text
+Github-QA-Bot-answer-PDF/
 │
 ├── backend/
 │   ├── __init__.py
