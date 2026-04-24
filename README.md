@@ -66,6 +66,7 @@ Github-QA-Bot-answer-PDF/
 │
 ├── requirements.txt
 └── README.md
+'''
 
 ## 🧪 Local Setup
 ollama pull mxbai-embed-large
