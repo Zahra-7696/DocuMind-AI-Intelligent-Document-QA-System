@@ -34,3 +34,21 @@ GRADIO_HOST = os.getenv(
 )
 
 GRADIO_PORT = int(os.getenv("GRADIO_PORT", "7860"))
+
+# AWS / Bedrock configuration
+AWS_REGION = os.getenv("AWS_REGION", "us-east-1")
+
+S3_BUCKET_NAME = os.getenv(
+    "S3_BUCKET_NAME",
+    "documind-ai-zahra-pdf-storage"
+)
+
+BEDROCK_EMBED_MODEL = os.getenv(
+    "BEDROCK_EMBED_MODEL",
+    "amazon.titan-embed-text-v2:0"
+)
+
+BEDROCK_LLM_MODEL = os.getenv(
+    "BEDROCK_LLM_MODEL",
+    "amazon.nova-lite-v1:0"
+)
